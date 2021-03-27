@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="350dp"
+            android:background="#ADD8E6"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="등록된 디바이스가 없습니다."
+                android:gravity="center"
+                android:textColor="#191970"
+                android:textSize="55px"
+                android:textAlignment="center"/>
+
+
+            <Button
+                android:id="@+id/register"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="121dp"
+                android:layout_height="44dp"
+                android:background="#FFF5EE"
+                android:text="디바이스 등록하기"
+                android:textColor="#800000"
+                tools:layout_editor_absoluteX="146dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
