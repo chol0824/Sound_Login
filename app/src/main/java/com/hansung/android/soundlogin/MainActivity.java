@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button imageButton = (Button) findViewById(R.id.register);
-        imageButton.setOnClickListener(new View.OnClickListener(){
+        Button device_button = (Button) findViewById(R.id.Sound_Login);
+        device_button.setOnClickListener(new View.OnClickListener(){
          @Override
         public void onClick(View view) {
             Intent intent = new Intent(getApplicationContext(), RegisActivity.class);

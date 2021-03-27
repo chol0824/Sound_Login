@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private class splashhandler implements Runnable{
         public void run(){
-            startActivity(new Intent(getApplication(), MainActivity.class)); //로딩이 끝난 후, ChoiceFunction 이동
+            startActivity(new Intent(getApplication(), LoginActivity.class)); //로딩이 끝난 후, ChoiceFunction 이동
             SplashActivity.this.finish(); // 로딩페이지 Activity stack에서 제거
         }
     }
