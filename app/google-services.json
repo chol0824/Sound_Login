@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "152631588922",
+    "project_id": "soundlogin-fe138",
+    "storage_bucket": "soundlogin-fe138.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152631588922:android:df79d15221ec50bc8e1d03",
+        "android_client_info": {
+          "package_name": "com.hansung.android.soundlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152631588922-qnq3a2an5cib4vc8cbrh59doacbmdu9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3MAMptEvo82KBiBztBuhnN5quYhWZaJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152631588922-qnq3a2an5cib4vc8cbrh59doacbmdu9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
