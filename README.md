@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sound Login
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/c15d920e-d8ba-496c-af31-a258ecef1870" width="350" height="300"/>
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/26631a09-5a0c-44be-997f-ce8bff9c9e36" width="200" height="300"/>
@@ -68,3 +69,9 @@
 
 
 
+=======
+# FlaskWeb
+Soundlogin FlaskWeb
+
+flask 가상환경 구축 후 사용
+>>>>>>> 7a7a11c9c74db30478d5c6bf7e38742e7d6855ef
