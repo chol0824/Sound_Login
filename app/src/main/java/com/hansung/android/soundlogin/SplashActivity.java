@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity { //앱 실행 시 초기 시작 화면
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -23,23 +23,27 @@
             android:textSize="30dp"/>
 
 
-        <LinearLayout
+
+        <Button
+            android:id="@+id/microphone"
+
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/microphone"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="#F0FFFF"
-            android:id="@+id/detail_pill"
-            android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="500dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/microphone"/>
-
-        </LinearLayout>
-
-
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="50dp"/>
 
 
     </LinearLayout>

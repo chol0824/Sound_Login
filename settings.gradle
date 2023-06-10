@@ -1,0 +1,7 @@
+include ':javax.additionnal'
+include ':javax,activation'
+include ':additionnal'
+include ':activation'
+include ':javax.mail'
+rootProject.name='SoundLogin'
+include ':app'

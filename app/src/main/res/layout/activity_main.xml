@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="532dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical">
 
@@ -21,10 +21,21 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/user_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#191970"
+                android:textSize="55px"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:text="환영합니다 !"
                 android:gravity="center"
                 android:textColor="#191970"
@@ -35,7 +46,7 @@
             <Button
                 android:id="@+id/Sound_Login"
                 android:layout_gravity="center"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="30dp"
                 android:layout_width="121dp"
                 android:layout_height="44dp"
@@ -46,7 +57,27 @@
                 tools:layout_editor_absoluteY="341dp" />
 
         </LinearLayout>
+        <Button
+            android:id="@+id/Record"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#4682B4"
+            android:text="최근 로그인 이력 조회"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="341dp" />
 
+        <ListView
+            android:id="@+id/record_list"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="#F0FFFF"
+            android:textColor="#800000" />
 
 
     </LinearLayout>
