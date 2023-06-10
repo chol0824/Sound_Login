@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Sound Login
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/c15d920e-d8ba-496c-af31-a258ecef1870" width="350" height="300"/>
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/26631a09-5a0c-44be-997f-ce8bff9c9e36" width="200" height="300"/>
