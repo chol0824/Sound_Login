@@ -1,0 +1,99 @@
+<DOCTYPE HTML5>
+  <html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <meta http-equiv="reload">
+    </head>
+  
+    <body width="100%" height="100%">
+  
+      <form action="" method="post" class="loginForm">
+        <h2>Sound Login</h2>
+       
+        <div class="idForm">
+          <input type="text" class="id" placeholder="ID" name="name" id="id">
+        </div>
+        <div class="passForm">
+          <button type="button" id="btn" onclick='recognition.start()'>
+           <img src="{{ url_for('static', filename='images/mic.png') }}" width="200px" height="200px"/>
+          </button>
+          <h1 class="result" id="result"></h1>
+  
+        </div>
+         
+  
+  
+    <script>
+      const btn = document.getElementById('btn');
+      const result = document.getElementById('result');
+
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition =  new SpeechRecognition();
+
+      recognition.onstart =  function () {
+           console .log('You can speak now');
+      }
+
+      recognition.onresult = function(event){
+        var text = event.results[0][0].transcript;
+        const name = document.getElementById('id').value;
+        document.getElementById("id").innerText = name;
+        console.log(text);
+        console.log(name);
+        document.getElementById('result').innerHTML = text;
+        if(text !=""){
+          var socket = io.connect('http://172.20.10.5:5000');          
+              // 서버 접속
+              socket.on( 'connect', function() {
+
+                  //let user_name = $( 'input.id' ).val()
+                  //let user_input = $( "#result" ).text()
+                  socket.emit( 'my event', {
+                    user_name : name,
+                    message : text
+                  } )
+                  return location.href='/main'
+            
+              } )
+
+        }
+       
+      }
+
+     
+    
+     
+    </script>   
+     
+    
+  
+          
+        
+      <div class="bottomText">
+          <b> Not registered yet? <a href='/registration'> Registeration </a></b><br>
+      </div>
+      </form>
+
+  
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <!-- 공식 홈페이지 내용 적용 -->
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script> -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" 
+             integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" 
+             crossorigin="anonymous"></script>
+     
+             <script type="text/javascript">
+
+              
+   
+          
+              
+          
+              // 받은 메시지
+             
+              
+            </script>
+         
+         </body>
+       </html>

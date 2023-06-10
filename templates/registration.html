@@ -1,0 +1,79 @@
+<DOCTYPE HTML5>
+     <html>
+     <head>
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+     
+        <title> Registration Page </title>
+     </head>
+     
+     
+     <body width="100%" height="100%">
+     
+     
+        <form action="" method="POST">
+        <table border="2" align="center">
+            <tr>
+                <th colspan="2" align="center"> Registration </th>
+             </tr>
+                 <td width="100"> Username </td>
+                 <td> <input type="text" class="username" placeholder="User Name" > </td>
+            </tr>
+            <tr>
+                 <td width="100"> Password </td>
+                 <td> <input type="text" class="password" placeholder="User Pw" > </td>
+            </tr>
+            <tr>
+                 <td width="100"> E-mail </td>
+                 <td> <input type="text" class="email"  placeholder="User Email" > </td>
+            </tr>
+            <tr>
+                 <td colspan="2" align="center"> <input type="submit" class="submitForm" value="Registration"onclick="location.href='/'"></td>
+            </tr>
+          </table>
+     
+        </form>
+     
+     
+     
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+         <script type="text/javascript">
+     
+           var socket = io.connect('http://172.20.10.5:5000');
+     
+           socket.on( 'connect', function() {
+             
+             var form = $( 'form' ).on( 'submit', function( e ) {
+               e.preventDefault()
+               let user_name = $( 'input.username' ).val()
+               let user_pw = $( 'input.password' ).val()
+               socket.emit( 'message', {
+                 user_name : user_name,
+                 password : user_pw,
+          
+               } )
+              
+               $( 'input.password' ).val( '' ).focus()
+              
+             } )
+           } )
+           socket.on( 'connect', function() {
+             
+             var form = $( 'form' ).on( 'submit', function( e ) {
+               e.preventDefault()
+               let user_name = $( 'input.username' ).val()
+               let user_email = $( 'input.email' ).val()
+               socket.emit( 'send_mail', 
+                  user_email
+               )
+               $( 'input.username' ).val( '' ).focus()
+               $( 'input.email' ).val( '' ).focus()
+              
+             } )
+           } )
+           
+         </script>
+     
+     
+     </body>
+     </html>
