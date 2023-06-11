@@ -44,7 +44,8 @@
 <code>Flask for Server</code><br>
 <code>Firebase for CLOUD-SERVER</code><br>
 <code>Java (Android Studio) for APP </code><br>
-
+<h2>What I learned</h2>
+<img src="https://github.com/chol0824/Sound_Login/assets/74773561/1b24012e-26af-4ec6-9439-57632c38c50f"/>
 
 <h2>Result_Detail</h2>
 <h3>Report</h3> 
