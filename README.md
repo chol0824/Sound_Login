@@ -65,12 +65,3 @@
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/aad72aee-a89a-4f70-9532-8d06d424c117" width="450" height="250"/>
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/7bda8101-7cf1-43da-a170-52cb10501017" width="450" height="250"/>
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/5e064137-8b20-4ecd-a054-5fd2b01ff2be" width="450" height="250"/>
-
-
-
-=======
-# FlaskWeb
-Soundlogin FlaskWeb
-
-flask 가상환경 구축 후 사용
->>>>>>> 7a7a11c9c74db30478d5c6bf7e38742e7d6855ef
