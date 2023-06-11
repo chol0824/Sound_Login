@@ -53,7 +53,7 @@
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/ac5dc0db-311f-4c9f-a8f7-bb1f36b14eb2" width="200" height="300"/>
 <br><br>
 <h3>Presentation</h3>
-<li>https://docs.google.com/viewer?url=https://github.com/chol0824/IoT-Smart-Pill-Dispenser/files/11625808/IoT_Smart_Pill_Dispenser.pdf?raw=True</li><br>
+<li>https://docs.google.com/viewer?url=https://github.com/chol0824/Sound_Login/files/11714318/7.PPT._._Soundlogin-compressed.pdf?raw=True</li><br>
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/19a672ee-a0a7-445c-9bea-7540207c23c4" width="450" height="250"/>
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/7b6fc50f-5fb8-4f7b-a882-b237d4a01a75" width="450" height="250"/>
 <img src="https://github.com/chol0824/Sound_Login/assets/74773561/49b0a974-d0d8-481e-93a9-b798ec12f6a9" width="450" height="250"/>
